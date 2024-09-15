@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aux.com</title>
+
+<link rel="stylesheet" href="auxy.css">
+</head>
+<body>
+<header>
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span>Playlist</h4>
+                <h4 class="active"><span></span>Last listening</h4>
+                <h4 class="active"><span></span>Recommended</h4>
+
+                </div>
+            <div class="menu_song">
+                <li class="songitem">
+                    <span>01</span>
+                    <img src="208.jpg" alt="Marshmello">
+                    <h5>
+                        Fly
+                        <div class="subtitle">Marshmello</div>
+                    </h5>
+                    <button class="play_circle" id="1"></button>
+                        <i class="bi playListplay" bi-play-cirle-fill id="1"></i>
+                    
+                </li>
+                <li class="songitem">
+                    <span>02</span>
+                    <img src="835.jpg" alt="Marshmello">
+                    <h5>
+                        Alone
+                        <div class="subtitle">Marshmello</div>
+                    </h5>
+                    <button class="play_circle" id="2"></button>
+                        <i class="bi playListplay" bi-play-cirle-fill id="2"></i>
+                    
+                </li>
+                <li class="songitem">
+                    <span>03</span>
+                    <img src="836.jpg" alt="Marshmello">
+                    <h5>
+                        Happier
+                        <div class="subtitle">Marshmello</div>
+                    </h5>
+                    <button class="play_circle" id="3"></button>
+                        <i class="bi playListplay" bi-play-cirle-fill id="3"></i>
+                                     
+                </li>
+                <li class="songitem">
+                    <span>04</span>
+                    <img src="841.jpg" alt="Marshmello">
+                    <h5>
+                        Summer
+                        <div class="subtitle">Marshmello</div>
+                    </h5>
+                    <button class="play_circle" id="4"></button>
+                        <i class="bi playListplay" bi-play-cirle-fill id="4"></i>
+                    
+                   
+                </li>
+                <li class="songitem">
+                    <span>05</span>
+                    <img src="208.jpg" alt="Marshmello">
+                    <h5>
+                        Next to you
+                        <div class="subtitle">Miles Away</div>
+                    </h5>
+                    <button class="play_circle" id="5"></button>
+                        <i class="bi playListplay" bi-play-cirle-fill id="5"></i>
+                    
+                   
+                </li>
+            </div>
+        </div>
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>DISCOVER <span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                
+                    <div class="search">
+                        <i class="bi bi-search"></i>
+                        <input type="text"  value="" id="search" onchange="openpage()"  placeholder="Search Music...">
+                </div>  
+                <div class="user">
+                    <img src="Gold Luxury Business Logo.png" alt="user" title="IAN MICHAELS(Hartford Errands)">
+                </div> 
+                       </nav>
+                <div class="content">
+                    <h1>Miles Away-Next to you</h1>
+                    <p>
+                        I don't know what we are doing this for but everytime I see it am next to you
+                        <br>
+                        The way the sun was setting so low but everytime I see it am next to you
+                    </p>
+                    <div class="buttons">
+                        <button>PLAY</button>
+                        <button>FOLLOW</button>
+                    </div>       
+                </div> 
+                <div class="popular_song">
+                    <div class="h4">
+                        <h4>Popular Song</h4>
+                        <div class="btn_s">
+                            <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                            <i id="right_scroll" class=" bi bi-arrow-right-short"></i>
+                        </div>
+                    </div>
+                    <div class="pop_song">
+                        <li class="songitem">
+                            <div class="img_play">
+                                <img src="839.jpg" alt="Marshmello">
+                                <i class="bi playListplay bi-play-cirle-fill" id="6"></i>
+                            </div>
+                            <h5> Fly<br>
+                                <div class="subtitle">Marshmello</div>
+                            </h5>                            
+                                    </li>
+                         <li class="songitem">
+                             <div class="img_play">
+                                <img src="208.jpg" alt="Westlife">
+                                <i class="bi playListplay bi-play-cirle-fill" id="7"></i>
+                                <!-- change all id -->
+                            </div>
+                               <h5>Queen of my Heart<br>
+                                <div class="subtitle">Westlife</div>
+                             </h5>                            
+                                     </li>
+                        <li class="songitem">
+                             <div class="img_play">
+                                 <img src="837.jpg" alt="Alan Walker">
+                                 <i class="bi playListplay bi-play-cirle-fill" id="8"></i>
+                                    </div>
+                                <h5> Faded<br>
+                                 <div class="subtitle">Alan Walker</div>
+                                     </h5>                            
+                                      </li>
+                         <li class="songitem">
+                            <div class="img_play">
+                             <img src="208.jpg" alt="Marshmello">
+                            <i class="bi playListplay bi-play-cirle-fill" id="9"></i>
+                         </div>
+                              <h5> Alone<br>
+                                  <div class="subtitle">Marshmello</div>
+                                         </h5>                            
+                                             </li>
+                      <li class="songitem">
+                                <div class="img_play">
+                                 <img src="835.jpg" alt="Khalid">
+                                 <i class="bi playListplay bi-play-cirle-fill" id="10"></i>
+                                        </div>
+                                 <h5> Better<br>
+                                <div class="subtitle">Khalid</div>
+                                    </h5>                            
+                                         </li>
+                      <li class="songitem">
+                                <div class="img_play">
+                                <img src="843.jpg" alt="Miles Away">
+                                <i class="bi playListplay bi-play-cirle-fill" id="11"></i>
+                                      </div>
+                                <h5> Next to you<br>
+                                 <div class="subtitle">Miles Away</div>
+                                     </h5>                            
+                                    </li>
+                     <li class="songitem">
+                                <div class="img_play">
+                                <img src="841.jpg" alt="Marshmello">
+                                <i class="bi playListplay bi-play-cirle-fill" id="12"></i>
+                                    </div>
+                                 <h5> Summer<br>
+                                <div class="subtitle">Marshmello</div>
+                                    </h5>                            
+                                 </li>
+                    <li class="songitem">
+                                <div class="img_play">
+                                <img src="842.jpg" alt="Marshmello">
+                                <i class="bi playListplay bi-play-cirle-fill" id="13"></i>
+                                        </div>
+                                <h5> Mad<br>
+                                <div class="subtitle">Neyo</div>
+                                      </h5>                            
+                                </li>
+                                </div>
+                              </div>
+                     <div class="popular_artist">
+                         <div class="h4">
+                         <h4>Popular Artist</h4>
+                         <div class="btn_s">
+                         <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+                         <i id="right_scrolls" class=" bi bi-arrow-right-short"></i>
+                         </div>
+                            </div>
+                    <div class="item">
+                        <li>
+                            <img src="835.jpg" alt="Marshmello" title="Marshmello">
+                        </li>
+                        <li>
+                            <img src="208.jpg" alt="Halsey" title="Halsey">
+                        </li>
+                        <li>
+                            <img src="842.jpg" alt="Ava Max" title="Ava Max">
+                        </li>
+                        <li>
+                            <img src="836.jpg" alt="Juice Wrld" title="Juice Wrld">
+                        </li>
+                        <li>
+                            <img src="208.jpg" alt="Westlife" title="Westlife">
+                        </li>
+                        <li>
+                            <img src="841.jpg" alt="Khalid" title="Khalid">
+                        </li>
+                        <li>
+                            <img src="843.jpg" alt="Miles Away" title="Miles Away">
+                        </li>
+                        <li>
+                            <img src="837.jpg" alt="Alan Walker" title="Alan Walker">
+                        </li>
+                        <li>
+                            <img src="838.jpg" alt="Neyo" title="Neyo">
+                        </li>
+                        <li>
+                            <img src="842.jpg" alt="Anne Marie" title="Anne Marie">
+                        </li>
+                        <li>
+                            <img src="841.jpg" alt="Kina" title="Kina">
+                        </li>
+                        
+                        
+                    </div>
+                            </div>     
+                                    
+                        </div>
+                        <div class="master_play">
+                            <div class="wave">
+                                <div class="wave1"></div>
+                                <div class="wave1"></div>
+                                <div class="wave1"></div>
+                            </div>
+                               <img src="210.jpg" alt="Marshmello" id="poster_master_play">
+                               <h5 id="title">Next to you <br>
+                                <div class="subtitle">Miles Away</div>
+                            </h5>
+                            <div class="icon">
+                                <button class="btn1" id="back" title="back"></button>
+                                <button class="btn2" id="masterplay" title="play"></button>
+                                <button class="btn3" id="next" title="next"></button>
+                
+                                <i class="bi bi-skip-start-fill" id="back"></i>
+                                <i class="bi bi-skip-play-fill" id="masterplay"></i>
+                                <i class="bi bi-skip-end-fill" id="next"></i>           
+                            
+                            </div>
+                            <span id="currentStart">0.00</span>
+                            <div class="bar">
+                                 <input type="range" id="seek" min="0" value="0" max="100">
+                                <div class="bar2" id="bar"></div>
+                                <div class="dot">
+                
+                                </div>
+                            </div>
+                            <span id="currentEnd">0.00</span>
+                            <div class="vol">
+                                <i class="bi bi-volume-down-fill"></i>
+                                <input type="range" id="vol" min="0" value="30" max="100">
+                                <div class="vol_bar"></div>
+                                <div class="dot" id="vol-dot">
+                            </div>
+                        </div>
+                    </header>
+                        <script src="auxy.js"></script>
+                </body>
+                </html>
+        
+<body>
+    
+</body>
+</html>

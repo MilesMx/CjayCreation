@@ -1,0 +1,583 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html{
+    height:100%;
+}
+
+:root {
+    --bg-color:#1f242d;
+    --second-bg-color: #323946;
+    --text-color:#fff;
+    --main-color: #0ef;
+    --second-main-color: #fff000;
+}
+
+body{
+    height: max-content;
+    max-height: fit-content;
+    margin:0;
+    padding:0px;
+    font-family: "Josefin sans";
+    background:linear-gradient(#141e30, #243b55);
+}
+
+header {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12.5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #141e30;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff000;
+    background: url(839.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+}
+}
+
+.log {
+    position: relative;
+    height: 70px;
+    width: 50px;
+    cursor: pointer;
+    background: transparent;
+    border: 0.25rem solid var(--bg-color);
+    border-radius: 25%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-left: 10px;
+    transition: 5s ease;
+    cursor: pointer;
+}
+
+.log:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--second-main-color);
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 16px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.navbar a::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background:#ec0707;
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: 0.5s;
+    
+}
+
+.navbar a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.Search-bar {
+    align-content: center;
+    width: 250px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #e4e4e4;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-right: 7cm;
+
+}
+.Search-bar input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color:lavenderblush;
+    padding-left: 10px;
+
+}
+
+.Search-bar input::placeholder {
+    color: gold;
+    
+}
+.Search-bar button {
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Search-bar button i {
+    font-size: 22px;
+    color:red;
+
+}
+
+
+.yt1 {
+    position: absolute;
+
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 20px;
+    
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: .05s;
+    
+}
+
+.yt1:hover {
+    border-color: cyan;
+    transform:scale(1.08);
+    z-index: 5;
+    position: absolute;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    background-color: #202020;
+        
+}
+
+.yt2 {
+    position: absolute;
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 410px;
+    cursor: pointer;  
+    transition: 0.5s;
+    transition-delay: .05s; 
+}
+
+.yt2:hover {
+    border-color: cyan;
+    transform:scale(1.08);
+    z-index: 5;
+    position: absolute;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    background-color: #202020;
+}
+.yt3 {
+    position: absolute;
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 400px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: .05s;
+}
+.yt3:hover {
+    border-color: cyan;
+    transform:scale(1.02);
+}
+
+.yt4 {
+    position: absolute;
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 400px;
+    margin-left: 410px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: .05s;
+}
+
+.yt4:hover {
+    border-color: cyan;
+    transform:scale(1.02);
+    
+}
+
+.yt5 {
+    position: absolute;
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 800px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: .05s;
+}
+
+.yt5:hover {
+    border-color: cyan;
+    transform:scale(1.02);
+}
+
+.yt6 {
+    height: 200px;
+    position: absolute;
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 400px;
+    margin-left: 800px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: .05s;
+}
+
+.yt6:hover {
+    border-color: cyan;
+    transform:scale(1.02);
+}
+.social-media a {
+    position:relative;
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: transparent;
+    border: 0.25rem solid var(--second-main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    
+    margin-top: 20px;
+    margin-left: 1250px;
+    transition: 5s ease;
+    cursor: pointer;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--second-main-color);
+
+}
+
+.music form {
+    height: max-content;
+    max-height: max-content;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    max-height: max-content;
+    
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+
+}
+
+.music-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.kids form {
+    height: max-content;
+    max-height: max-content;
+}
+
+.kids form .active {
+   position: absolute;
+   margin-top: 1.7rem;
+   font-size: 1.7rem;
+   color:#0ef;
+   cursor: pointer;
+}
+
+.kids form .first{
+   margin-top: 5rem;
+   border-radius: 2px;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color);
+   
+}
+
+.kids form .first:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+}
+
+.kids form .second{
+   position: absolute;
+   margin-right: 2rem;
+   margin-top: 5rem;
+   margin-inline: 4rem;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color); 
+}
+
+.kids form .second:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+}
+
+.kids form .third{
+   position: absolute;
+   margin-top: 25rem;
+   margin-left: 2rem;
+   margin-inline: 4rem;
+   background-color: black;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color); 
+}
+
+.kids form .third:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+   
+}
+
+.kids form .active {
+   
+   font-size: 3rem;
+   color:#0ef;
+   cursor: pointer;
+   transition: .3s ease;
+}
+
+.link form .active:hover {
+  color: #fff000;
+}
+
+.entertainment form {
+    max-height: max-content;
+}
+
+.entertainment form .active {
+   position: absolute;
+   margin-top: 1.7rem;
+   font-size: 1.7rem;
+   color:#0ef;
+   cursor: pointer;
+}
+
+.entertainment form .first{
+   margin-top: 5rem;
+   border-radius: 2px;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color);
+   
+}
+.entertainment form .first:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+}
+
+.entertainment form .second{
+   position: absolute;
+   margin-right: 2rem;
+   margin-top: 5rem;
+   margin-inline: 4rem;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color); 
+}
+
+.entertainment form .second:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+}
+
+.entertainment form .third{
+   position: absolute;
+   margin-top: 25rem;
+   margin-left: 2rem;
+   margin-inline: 4rem;
+   background-color: black;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color); 
+}
+
+.entertainment form .third:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+   
+}
+
+.entertainment form .active {
+   
+   font-size: 3rem;
+   color:#0ef;
+   cursor: pointer;
+   transition: .3s ease;
+}
+
+.link form .active:hover {
+  color: #fff000;
+}
+
+.make form {
+    max-height: max-content;
+}
+
+.make .active {
+   position: absolute;
+   margin-top: 1.7rem;
+   font-size: 1.7rem;
+   color:#0ef;
+   cursor: pointer;
+}
+
+.make form .first{
+   margin-top: 5rem;
+   border-radius: 2px;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color);
+   
+}
+.make form .first:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+}
+
+.make form .second{
+   position: absolute;
+   margin-right: 2rem;
+   margin-top: 5rem;
+   margin-inline: 4rem;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color); 
+}
+
+.make form .second:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+}
+
+.make form .third{
+   position: absolute;
+   margin-top: 25rem;
+   margin-left: 2rem;
+   margin-inline: 4rem;
+   background-color: black;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color); 
+}
+
+.make form .third:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+   
+}
+
+.make form .active {
+   
+   font-size: 3rem;
+   color:#0ef;
+   cursor: pointer;
+   transition: .3s ease;
+}
+
+.make form .active:hover {
+  color: #fff000;
+}
+
+
+.comedy form {
+    max-height: max-content;
+}
+
+.comedy form .active {
+   position: absolute;
+   margin-top: 1.7rem;
+   font-size: 1.7rem;
+   color:#0ef;
+   cursor: pointer;
+}
+
+.comedy form .first{
+   margin-top: 5rem;
+   border-radius: 2px;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color);
+   
+}
+.comedy form .first:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+}
+
+.comedy form .second{
+   position: absolute;
+   margin-right: 2rem;
+   margin-top: 5rem;
+   margin-inline: 4rem;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color); 
+}
+
+.comedy form .second:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+}
+
+.comedy form .third{
+   position: absolute;
+   margin-top: 25rem;
+   margin-left: 2rem;
+   margin-inline: 4rem;
+   background-color: black;
+   cursor: pointer;
+   border: 0.2rem solid var(--bg-color); 
+}
+
+.comedy form .third:hover {
+   border-color: var(--main-color);
+   transform:scale(1.02);
+   
+}
+
+.comedy form .active {
+   
+   font-size: 3rem;
+   color:#0ef;
+   cursor: pointer;
+   transition: .3s ease;
+}
+
+.comedy form .active:hover {
+  color: #fff000;
+}
+
+
+
+

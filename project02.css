@@ -1,0 +1,322 @@
+html{
+    height:100%;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: Haettenschweiler;
+    background: linear-gradient(#141e30, 243b55);
+    background-position: center;
+    background-size: cover;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12.5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.navbar a {
+    position: relative;
+    font-size: 16px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+    
+}
+
+.navbar a::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background:#ec0707;
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: 0.5s;
+    
+}
+
+.navbar a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.Search-bar {
+    align-content: center;
+    width: 250px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #e4e4e4;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-right: 7cm;
+
+}
+.Search-bar input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color:#d4f806;
+    padding-left: 10px;
+
+}
+
+.Search-bar input::placeholder {
+    color: gold;
+    
+}
+.Search-bar button {
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Search-bar button i {
+    font-size: 22px;
+    color:red;
+
+}
+    .tipper-box{
+        position: relative; ;
+     }
+     .tipper-box input{
+       font-size: 16px;
+       color:#0ce40c;
+       margin-bottom: 30px;
+       border-bottom: 2px solid gold;
+       outline: black;
+       background:transparent;
+    }
+    .tipper-box input:focus{
+        border-bottom-color: rgb(243, 17, 9);
+
+    }
+    .tipper-box label{
+        position: absolute;
+        top:0;
+        left:0;
+        padding: 10px 0;
+        font-size: 16 #fff;
+        color:rgb(240, 247, 250);
+        pointer-events:none;
+        transition: all 0.5s;
+    }
+    .tipper-box input:focus ~ label,
+     .tipper-box input:valid ~ label {
+        top: -20px;
+        left:0;
+        color: #03e9f4;
+        font-size: 13px;
+        
+    }
+
+.forget-box label{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 10px 0;
+    font-size: 16 #fff;
+    color:rgb(240, 247, 250);
+    pointer-events:none;
+    transition: all 0.5s;
+}
+
+.Login-box{
+    margin-top: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-sizing: border-box;
+    box-shadow: #141e30;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6)
+    border-radius: 10px;
+
+     }
+
+     .Login-box h2{
+        color: #f7df09;
+         text-align: center;
+         font-weight: lighter;
+         font-style: normal;
+
+     }
+   
+     .User-box{
+        position: relative; ;
+     }
+     .User-box input{
+       font-size: 16px;
+       color:#f8d304;
+       margin-bottom: 30px;
+       border-bottom: 2px solid gold;
+       outline: black;
+       background:transparent;
+    }
+    .User-box input:focus{
+        border-bottom-color: rgb(243, 17, 9);
+
+    }
+    .User-box label{
+        position: absolute;
+        top:0;
+        left:0;
+        padding: 10px 0;
+        font-size: 16 #fff;
+        color:rgb(240, 247, 250);
+        pointer-events:none;
+        transition: all 0.5s;
+    }
+    .User-box input:focus ~ label,
+    .User-box input:valid ~ label {
+        top: -20px;
+        left:0;
+        color: #03e9f4;
+        font-size: 13px;
+
+    }
+    .Login-box form a {
+        position:relative;
+        display:inline-block;
+        padding: 10px 20px;
+        color: #03e9f4;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow:hidden;
+        transition:all 0.5;
+        margin: right 40px;
+        letter-spacing: 4px;
+
+    }
+    .Login-box a:hover{
+        background: #03e9f4;
+        color:#fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4 0 0 100px #03e9f4;
+
+    }
+    .Login-box a span {
+        position: absolute;
+        display:block;
+
+    }
+    .Login-box a span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #03e9f4);
+        animation: anim1 1s linear infinite;
+        
+    }
+    @keyframes anim1 {
+        0% {
+            left: -100%;
+
+        }
+        50%,
+        100% {
+            left: 100%  
+        }
+
+    }
+
+    .Login-box a span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #03e9f4);
+        animation: anim2 1s linear infinite;
+        animation-delay: 0.25s;
+    }
+    @keyframes anim2 {
+        0% {
+            top: -100%;
+
+        }
+        50%,
+        100% {
+            top: 100%  
+        }
+
+    }
+
+    .Login-box a span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #03e9f4);
+        animation: anim3 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+    @keyframes anim3 {
+        0% {
+            right: -100%;
+
+        }
+        50%,
+        100% {
+            right: 100%  
+        }
+
+    }
+
+    .Login-box a span:nth-child(4) {
+        bottom: -100;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #03e9f4);
+        animation: anim4 1s linear infinite;
+        animation-delay: 0.75s;
+    }
+    @keyframes anim4 {
+        0% {
+            bottom: -100%;
+
+        }
+        50%,
+        100% {
+            bottom: 100%  
+        }
+
+    }
+
+    .social-icons a i {
+        font-size: 22px;
+        color:#03e9f4;
+        margin-right: 10px;
+
+    }
+    .social-icons a:hover i {
+        transform: scale(1.2);
+        
+    }

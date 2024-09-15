@@ -1,0 +1,212 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html{
+    height:100%;
+}
+body{
+    margin:0;
+    padding:0px;
+    font-family: "Josefin sans";
+    background:linear-gradient(#141e30, #243b55);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12.5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 16px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.navbar a::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background:#ec0707;
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: 0.5s;
+    
+}
+
+.navbar a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.Search-bar {
+    align-content: center;
+    width: 250px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #e4e4e4;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-right: 7cm;
+
+}
+.Search-bar input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color:#d4f806;
+    padding-left: 10px;
+
+}
+
+.Search-bar input::placeholder {
+    color: gold;
+    
+}
+.Search-bar button {
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Search-bar button i {
+    font-size: 22px;
+    color:red;
+
+}
+
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    width:400px;
+    padding:40px;
+}
+
+.yt1 {
+    position: absolute;
+
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 10px;
+    
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: .05s;
+    
+}
+
+.yt1:hover {
+    border-color: cyan;
+    transform:scale(1.08);
+    z-index: 5;
+    position: absolute;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    background-color: #202020;
+        
+}
+
+.yt2 {
+    position: absolute;
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 400px;
+    cursor: pointer;  
+    transition: 0.5s;
+    transition-delay: .05s; 
+}
+
+.yt2:hover {
+    border-color: cyan;
+    transform:scale(1.08);
+    z-index: 5;
+    position: absolute;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    background-color: #202020;
+}
+.yt3 {
+    position: absolute;
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 450px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: .05s;
+}
+.yt3:hover {
+    border-color: cyan;
+    transform:scale(1.02);
+}
+
+.yt4 {
+    position: absolute;
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 450px;
+    margin-left: 400px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: .05s;
+}
+
+.yt4:hover {
+    border-color: cyan;
+    transform:scale(1.02);
+}
+
+.yt5 {
+    position: absolute;
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 800px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: .05s;
+}
+
+.yt5:hover {
+    border-color: cyan;
+    transform:scale(1.02);
+}
+
+.yt6 {
+    position: absolute;
+    border:0.2rem solid gold;
+    border-radius: 10px;
+    margin-top: 450px;
+    margin-left: 800px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: .05s;
+}
+
+.yt6:hover {
+    border-color: cyan;
+    transform:scale(1.02);
+}
